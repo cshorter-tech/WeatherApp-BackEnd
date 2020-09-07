@@ -1,9 +1,10 @@
 const express = require('express');
 const https = require('https');
+require('dotenv').config();
 
 const app = express();
 const location = "London";
-const key = ""
+const key = process.env.NODE_APP_WEATHER_API_KEY
 const url = `https://api.openweathermap.org/data/2.5/weather${location}?q=${location}&appid=${key}`
 
 
