@@ -12,7 +12,6 @@ app.get('/', function (req, res) {
 })
 
 app.post('/', function (req, res) {
-    // console.log();
     const queryLocation = req.body.cityName;
     const key = process.env.NODE_APP_WEATHER_API_KEY
     const units = "Imperial"
